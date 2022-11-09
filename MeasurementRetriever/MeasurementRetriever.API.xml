@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MeasurementRetriever.API</name>
+    </assembly>
+    <members>
+        <member name="M:MeasurementRetriever.API.Controllers.DatasetInfoController.Get(System.Int32,System.Int32)">
+            <summary>
+            Get created datasets
+            </summary>     
+            <param name="page"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeasurementRetriever.API.Controllers.DatasetInfoController.Post(MeasurementRetriever.Service.Abstractions.Dtos.DatasetInfoDto)">
+             <summary>
+             Create dataset record in db
+             </summary>
+              <remarks>
+             Datasets are automatically processed by background job
+             
+             Example:
+             {
+            
+               "url": "https://data.gov.lt/dataset/1975/download/10766/2022-05.csv",
+              "type": "Url"
+              }
+             </remarks>
+             <param name="data"></param>
+             <returns></returns>
+        </member>
+        <member name="M:MeasurementRetriever.API.Controllers.MeasurmentController.Get(System.Int32,System.Int32)">
+            <summary>
+            Get Paged Agregated Measurements 
+            </summary>
+            <param name="page"></param>
+            <param name="pagesize"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
